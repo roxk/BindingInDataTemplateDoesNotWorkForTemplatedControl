@@ -1,0 +1,23 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App">
+
+    <Style TargetType="local:CustomControl1">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:CustomControl1">
+                    <Border Background="Azure">
+                        <StackPanel>
+                            <Rectangle
+                                Width="{TemplateBinding SomeProp}"
+                                Height="50"
+                                Fill="Red" />
+                            <TextBlock Text="SomeText" />
+                        </StackPanel>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
